@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Home page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log out</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../css/index.css">
-
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/admin.css" />
   </head>
   <body>
     <nav>
@@ -17,7 +19,7 @@
       <div id="nava">
         <a href="">GIFTS</a>
         <a href="">NEW IN</a>
-        <a href="../html/products.html">WOMEN</a>
+        <a href="">WOMEN</a>
         <a href="">MEN</a>
         <a href="">CHILDEREN</a>
         <a href="">THE TRENCH COAT</a>
@@ -28,44 +30,32 @@
       <div id="navpro">
         <!-- <a id="log" href="">LOGOUT</a> -->
         <i class="fa fa-search" style="font-size: 32px"></i>
-        <i id="acc" class="fa fa-user" class="vote-up-off" title="account" style="font-size: 32px"></i>
+        <i
+          id="acc"
+          class="fa fa-user"
+          class="vote-up-off"
+          title="account"
+          style="font-size: 32px"
+        ></i>
         <i class="fa fa-shopping-bag" style="font-size: 32px"></i>
         <!-- <i id="log" class="fa fa-sign-out" aria-hidden="true" style="font-size: 32px"></i> -->
       </div>
-   </nav >
-
+    </nav>
     <div id="main">
-      <div id="child1">
-        <img src='../img/DD888F01-B990-473B-BA13-48BB86124CBF.jpg' style="width: 100%;"></img>
-        <h1>Women’s Trench Coats</h1>
-      </div>
-      <div id="child2">
-        <img src="../img/0516D493-ACB4-456A-A524-6B777EB75AA3.jpg"  style="width: 100%;" alt="">
-        <h1>Men’s Trench Coats</h1>
-      </div>
+      <img
+        src="https://assets.burberry.com/is/image/Burberryltd/MyAccount.jpg?$BBY_V2_BASIC$&wid=1875&hei=375"
+        style="width: 100%"
+        alt=""
+      />
+      <h1>ADMIN LOGIN</h1>
     </div>
-    <div id="main1">
-      <p>WOMEN’S HOLIDAY EDIT</p>
-      <p>MEN’S HOLIDAY EDIT</p>
-    </div>
-    <div id="main2">
-      <div id="child3">
-        <img src="../img/A9ED9A9F-011B-423B-898C-9DFA48957BBD.jpg" style="width: 100%;" alt="">
-        <h1>Women’s Bags</h1>
-      </div>
-
-      <div id="child4">
-        <img src="../img/E4D81A2B-CC43-41E8-A173-EE09A42D64D1.jpg" style="width: 100%;" alt="">
-        <h1>Men’s Bags</h1>
-      </div>
-    </div>
-
-    <div id="main3">
-      <img src="../img/24B3B2B8-12B6-4DEA-9174-2650E15976F2.jpg" style="width:100% ;" alt="" />
-      <h1>The Heritage Collection</h1>
-      <p>View Your Iconic Products</p>
-    </div>
-
+    <form id="signin">
+        <h4>WELCOME BACK TO ADMIN</h4>
+        <P>Sign in to access your account</P>
+        <input id="email1" class="text" type="text" placeholder="Your email" required><br>
+        <input id="pass1" class="text" type="password" placeholder="password" required>
+        <button id="admin" type="submit">SIGN IN</button>
+      </form>
     <footer>
       <div>
         <h4>SIGN UP</h4>
@@ -96,5 +86,5 @@
       </div>
     </footer>
   </body>
-  <script src="../script/index.js"></script>
+  <script src="../script/admin.js"></script>
 </html>

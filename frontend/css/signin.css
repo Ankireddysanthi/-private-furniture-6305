@@ -97,7 +97,7 @@ footer {
     padding: 40px;
     
   }
-  #signin {
+  /* #signin {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,17 +106,17 @@ footer {
     margin-right: 150px;
     padding-left: 100px; 
     border-right:2px solid grey;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     font-size: large;
     align-items: center;
-    /* padding: 60px; */
-  }
+    padding: 60px;
+  } */
   #signup {
     display: flex;
     flex-direction: column;
     
   }
-  h4 {
+  /* h4 {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
@@ -124,8 +124,8 @@ footer {
   p {
     margin: 10px 0;
     font-size: 14px;
-  }
-  .text {
+  } */
+  /* .text {
     margin: 10px 0;
     padding: 10px;
     border: none;
@@ -133,13 +133,13 @@ footer {
     background-color: #E5E5E5;
     font-size: 14px;
     width: 100%;
-  }
-  a {
+  } */
+  /* a {
     margin: 10px 0;
     font-size: 14px;
     text-decoration: none;
     color: #555555;
-  }
+  } */
   button {
     margin: 10px 0;
     padding: 10px 20px;
@@ -150,6 +150,64 @@ footer {
     font-size: 14px;
     cursor: pointer;
   }
+
+
+  /* Style for the form container */
+#signin {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style for the form heading */
+#signin h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the form image */
+#signin img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style for the form description */
+#signin p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for the input fields */
+#signin input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#signin button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the forgot password link */
+#signin a {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
   #signup p{
   display: flex;
   justify-content: start;
@@ -163,7 +221,7 @@ footer {
     #signup1{
         display:none;
     }
-    #signup1 {
+    /* #signup1 {
         max-width: 400px;
         margin: auto;
         padding: 40px;
@@ -200,7 +258,7 @@ footer {
         font-weight: bold;
         cursor: pointer;
         transition: background-color 0.3s ease;
-      }
+      } */
       /* #signup1 button[type="submit"]:hover {
         background-color: #0077b3;
       } */

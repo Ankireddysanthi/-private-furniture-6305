@@ -1,12 +1,9 @@
-let signupbtn = document.getElementById("signupbtn")
-let signup = document.getElementById("signup")
-let signup1 = document.getElementById("signup1")
-let signin=document.getElementById("signin")
-//************************signup******************* */
-signupbtn.addEventListener("click", () => {
-    signup.style.display = "none"
-    signup1.style.display = "block"
+let home=document.getElementById("nav img")
+home.addEventListener("click",()=>{
+
+    window.location.assign("index.html")
 })
+let signup1 = document.getElementById("signup1")
 signup1.addEventListener("submit", (e) => {
     e.preventDefault();
     let username = document.getElementById("name")
@@ -34,12 +31,15 @@ signup1.addEventListener("submit", (e) => {
             console.log(data.msg)
             if (data.msg == "already exit") {
                 alert("email already exit pls login");
+                window.location.assign("sigin.html")
 
 
             }
             localStorage.setItem("userName", data.userName)
             if (data.msg == "registration success") {
                 alert(`${a} Registraion Success Please Login to Continue`)
+                window.location.href="../html/sigin.html"
+                window.location.assign("sigin.html")
                 signup1.style.display="none"
 
             }
@@ -47,36 +47,3 @@ signup1.addEventListener("submit", (e) => {
         })
         .catch(err => console.log(err));
 })
-//**************-login****************************/
-
-// let form=document.getElementById("form");
-    let email1=document.getElementById("email1")
-    let pass1=document.getElementById("pass1");
-      signin.addEventListener("submit",(e)=>{
-        e.preventDefault();
-        let obj={
-            email:email1.value,
-            pass:pass1.value
-        }
-    console.log(obj)
-       fetch("http://localhost:8080/user/login",{
-        method: "POST",
-          headers: { "Content-type": "application/json" },
-          body: JSON.stringify(obj)
-       })
-       .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                if(data.msg == "login"){
-                localStorage.setItem("token", data.token)
-                localStorage.setItem("username", data.username)
-                window.location.assign("index.html")
-                
-                 form.reset()
-                }
-                else alert("Wrong Credentials")
-            })
-            .catch(err => console.log(err));       
-        // return false;
-
-    })
