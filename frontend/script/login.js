@@ -66,7 +66,7 @@ signupbtn.addEventListener("click", () => {
         }
         let b=obj
     console.log(obj)
-       fetch("http://localhost:8080/user/login",{
+       fetch("https://thoughtful-elk-sun-hat.cyclic.app/user/login",{
         method: "POST",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify(obj)

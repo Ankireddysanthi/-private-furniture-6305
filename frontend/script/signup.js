@@ -1,7 +1,12 @@
 let home=document.getElementById("nav img")
+
+let data=JSON.parse(localStorage.getItem("key"))
+console.log(data)
+
 home.addEventListener("click",()=>{
 
     window.location.assign("index.html")
+
 })
 let signup1 = document.getElementById("signup1")
 signup1.addEventListener("submit", (e) => {
@@ -21,7 +26,7 @@ signup1.addEventListener("submit", (e) => {
 
     let a = obj.username
     console.log(a)
-    fetch("http://localhost:8080/user/reg", {
+    fetch("https://thoughtful-elk-sun-hat.cyclic.app/user/reg", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(obj)

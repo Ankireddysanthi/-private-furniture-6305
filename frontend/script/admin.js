@@ -8,7 +8,7 @@ let pass1=document.getElementById("pass1");
     }
     let b=obj
 console.log(obj)
-   fetch("http://localhost:8080/admin/login",{
+   fetch("https://thoughtful-elk-sun-hat.cyclic.app/admin/login",{
     method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(obj)

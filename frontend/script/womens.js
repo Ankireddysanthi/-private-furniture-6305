@@ -1,7 +1,7 @@
 let main=document.getElementById("main")
 async function fetchdata(){
      try {
-         let res=await fetch("http://localhost:8080/products/all");
+         let res=await fetch("https://thoughtful-elk-sun-hat.cyclic.app/products/all");
          let data=await res.json();
          console.log(data);
          display(data)
