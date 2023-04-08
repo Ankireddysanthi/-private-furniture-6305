@@ -1,7 +1,7 @@
 let home=document.getElementById("nav img")
 home.addEventListener("click",()=>{
 
-    window.location.assign("index.html")
+    window.location.assign("http://127.0.0.1:5500/frontend/index.html")
 })
 
 let logout=document.getElementById("logout");

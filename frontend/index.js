@@ -2,12 +2,12 @@ let acc=document.getElementById("acc");
 const username=localStorage.getItem("username");
 acc.addEventListener("click",()=>{
     if(username){
-        window.location.href="../html/logout.html"
+        window.location.href="./html/logout.html"
         // acc.style.display="none"
         // acc.innerText=username
         // log.style.display="block"
     }else{
-        window.location.href="../html/sigin.html"
+        window.location.href="./html/sigin.html"
     }
 
 

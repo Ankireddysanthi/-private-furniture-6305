@@ -1,8 +1,8 @@
 // const { json } = require("body-parser");
-let home=document.getElementById("nav img")
-home.addEventListener("click",()=>{
+let home = document.getElementById("nav img")
+home.addEventListener("click", () => {
 
-    window.location.assign("index.html")
+  window.location.assign("http://127.0.0.1:5500/frontend/index.html")
 })
 let main = document.getElementById("main")
 let count = document.getElementById("count")
@@ -42,30 +42,30 @@ function display(data) {
     button.innerHTML = "Buy"
 
     button.addEventListener("click", () => {
-console.log(element._id)
+      console.log(element._id)
       // if (checkduplicate(element._id)) {
-        arr.push(element);
-         let c1=0;
-        for(let i=0;i<arr.length;i++){
-          if(element._id==arr[i]._id){
-            c1++
-            
-          }
+      arr.push(element);
+      let c1 = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (element._id == arr[i]._id) {
+          c1++
+
         }
-        if(c1>1){
-          alert("product already added")
-        }else{
-          alert("product added")
-         localStorage.setItem("key", JSON.stringify(arr));
-        
-        }
-        console.log(c1)
+      }
+      if (c1 > 1) {
+        alert("product already added")
+      } else {
+        alert("product added")
+        localStorage.setItem("key", JSON.stringify(arr));
+
+      }
+      console.log(c1)
       //  console.log(arr)
       //   c++
       //   count.innerText = c;
       //   console.log(element._id)
 
-        // localStorage.setItem("key", JSON.stringify(arr));
+      // localStorage.setItem("key", JSON.stringify(arr));
       //   alert("added successfully");
       // } else {
       //   alert("product already added")
@@ -87,13 +87,13 @@ console.log(element._id)
 
 
   });
-//   function checkduplicate(ele) {
+  //   function checkduplicate(ele) {
 
-//     for (let i=0;i<arr) {
-//       if (e._id = ele) {
-//         return false;
-//       }
-//       return true;
-//     }
-//   }
- }
+  //     for (let i=0;i<arr) {
+  //       if (e._id = ele) {
+  //         return false;
+  //       }
+  //       return true;
+  //     }
+  //   }
+}
