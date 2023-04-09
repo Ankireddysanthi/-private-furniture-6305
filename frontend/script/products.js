@@ -1,7 +1,7 @@
 let home=document.getElementById("nav img")
 home.addEventListener("click",()=>{
 
-    window.location.assign("http://127.0.0.1:5500/frontend/index.html")
+    window.location.assign("http://127.0.0.1:5501/-private-furniture-6305/frontend/index.html")
 })
 let coat=document.getElementById("coat")
 let bag=document.getElementById("bag")
