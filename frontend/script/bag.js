@@ -1,11 +1,17 @@
 // const { json } = require("body-parser");
 let home = document.getElementById("nav img")
+let bag=document.getElementById("bag")
+bag.addEventListener("click",()=>{
+  window.location.assign("cartbag.html")
+})
 home.addEventListener("click", () => {
 
   window.location.assign("http://127.0.0.1:5501/-private-furniture-6305/frontend/index.html")
 })
 let main = document.getElementById("main")
 let count = document.getElementById("count")
+// count=5
+// console.log(count)
 // console.log(arr)
 //let arr = JSON.parse(localStorage.getItem("key")) || []
 let arr = []
@@ -56,10 +62,15 @@ function display(data) {
         alert("product already added")
       } else {
         alert("product added")
-        localStorage.setItem("key", JSON.stringify(arr));
+        let currentBagCount = parseInt(count.innerText);
+
+        // Update the bag count by adding 1
+        currentBagCount ++
+        console.log(currentBagCount)
+        localStorage.setItem("bag", JSON.stringify(arr));
 
       }
-      console.log(c1)
+      // console.log(c1)
       //  console.log(arr)
       //   c++
       //   count.innerText = c;

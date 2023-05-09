@@ -6,7 +6,7 @@ nav {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* position: fixed; */
+
 }
 
 #nav img {
@@ -35,6 +35,13 @@ nav {
 
 #nava a:hover {
   color: #666;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #main {
@@ -152,23 +159,3 @@ footer div:last-of-type p {
   color: #fff;
   margin-top: -200px;
 }
-
-/* #main3{
-  background-image: url("../img/24B3B2B8-12B6-4DEA-9174-2650E15976F2.jpg");
-  text-align: center;
-  padding-top: 600px;
-  color: #fff;
-  padding-bottom: 20px;
-}
-#main3>p{
-  text-decoration: underline;
-} */
-/* #navpro{
-  border: 2px solid red;
-  padding-left:30px ;
-  padding-right:80px ;
-}
-#log{
-  display:none;
-} */
-

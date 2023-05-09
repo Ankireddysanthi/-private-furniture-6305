@@ -1,6 +1,10 @@
 let main=document.getElementById("main")
 let count = document.getElementById("count")
 let home=document.getElementById("nav img")
+let coat=document.getElementById("coat")
+coat.addEventListener("click",()=>{
+  window.location.assign("cartcoat.html")
+})
 home.addEventListener("click",()=>{
 
     window.location.assign("http://127.0.0.1:5501/-private-furniture-6305/frontend/index.html")
@@ -21,6 +25,7 @@ async function fetchdata(){
  fetchdata()
 
  function display(data){
+ // event.preventDefault()
      main.innerHTML=""
      data.forEach(element => {
          let card=document.createElement("div")
@@ -41,7 +46,8 @@ async function fetchdata(){
       let button=document.createElement("button");
        button.innerHTML="Buy"
        
-       button.addEventListener("click", () => {
+       button.addEventListener("click", (e) => {
+        e.preventDefault()
         console.log(element._id)
               // if (checkduplicate(element._id)) {
                 arr.push(element);
@@ -56,7 +62,7 @@ async function fetchdata(){
                   alert("product already added")
                 }else{
                   alert("product added")
-                 localStorage.setItem("key", JSON.stringify(arr));
+                 localStorage.setItem("coat", JSON.stringify(arr));
                 
                 }
                 console.log(c1)

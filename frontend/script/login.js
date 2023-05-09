@@ -78,7 +78,7 @@ signupbtn.addEventListener("click", () => {
                 localStorage.setItem("token", data.token)
                 localStorage.setItem("username", data.username)
                 alert(`Hello ${data.username} welcome to burberry`)
-                window.location.assign("http://127.0.0.1:5500/frontend/index.html")
+                window.location.assign("http://127.0.0.1:5500/-private-furniture-6305/frontend/index.html")
                  form.reset()
                 }
                 else alert("Wrong Credentials")

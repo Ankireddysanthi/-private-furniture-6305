@@ -1,5 +1,9 @@
 let main=document.getElementById("main")
 let home=document.getElementById("nav img")
+let shoe=document.getElementById("shoe")
+shoe.addEventListener("click",()=>{
+  window.location.assign("cartshoe.html")
+})
 home.addEventListener("click",()=>{
 
     window.location.assign("http://127.0.0.1:5501/-private-furniture-6305/frontend/index.html")
@@ -53,7 +57,7 @@ async function fetchdata(){
                   alert("product already added")
                 }else{
                   alert("product added")
-                 localStorage.setItem("key", JSON.stringify(arr));
+                 localStorage.setItem("shoe", JSON.stringify(arr));
                 
                 }
                 console.log(c1)

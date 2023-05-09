@@ -15,7 +15,7 @@ userroute.post("/reg", async (req, res) => {
       bcrypt.hash(pass, 5, async (err, hash) => {
         const user = new Usermodel({ username, email, pass: hash, phone_number });
         await user.save();
-        // console.log(user)
+        console.log(user)
       });
       res.send({ msg: "registration success" })
     }
